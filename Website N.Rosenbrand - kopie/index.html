@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Nathalie Rosenbrand</title>
+        <link rel=stylesheet type="text/css" href="css/style.css">
+        <script scr="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+    <body>
+        <section class="zoom">
+        <img src="/imgs/text.png" id="text" alt="">
+        <img src="/imgs/S-layer2.png" id="layer2" alt="">
+        <img src="/imgs/S-layer1.png" id="layer1" alt="">
+        </section>
+        <section class="video">
+        <object data="/imgs/ezgif.com-crop.gif" id="video"></object>
+        </section>
+        <section class="content">
+        </section>
+        <script type="text/javascript">
+        var layer1 = document.getElementById('layer1')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;
+        scroll = offset;
+        layer1.style.width = (100 + scroll/5) + '%';
+                });
+        var layer2 = document.getElementById('layer2')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/20) + '%';
+                });
+        var text = document.getElementById('text')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/20) + '%';
+        text.style.top = - scroll/50  + '%';
+                });
+        window.addEventListener('scroll', () => {
+            var video = document.getElementById('video')
+            const scrollable = (document.documentElement.scrollHeight - window.innerHeight) /2;
+            const scrolled = window.scrollY;
+            
+            console.log(scrollable);
+            console.log(scrolled);
+           
+            
+            if((scrolled >= 190) && (scrolled <= 360)) {
+                console.log("show video");
+                video.style.opacity = 1.0;
+                
+            }
+            else{
+                console.log("hide video");
+                video.style.opacity = 0.0;
+            }  
+        }); 
+        </script>
+    </body>
+</html>
+
+ 
