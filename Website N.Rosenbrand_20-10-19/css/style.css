@@ -19,7 +19,7 @@ body{
     padding-bottom: 23%;
     position: relative;
     overflow: hidden;
-    background: url(/imgs/S-layer3.png);
+    background: url("../imgs/S-layer3.png");
     background-size: cover;
     
 }
@@ -85,7 +85,7 @@ body{
 }
 
 .content{
-    height: 168vh;
+    height: 225vh;
     box-sizing: border-box;
     background-color: #F8F9F9;
 }
@@ -100,9 +100,10 @@ h2{
 }
 
 .content #background{
-    height: 170%;
+	top: 1360px;
+    height: 1200px;
     width: 60%;
-    background-image: url(/imgs/Back1-dark.png);
+    background-image: url("../imgs/Back1-dark-long.png");
     background-repeat: no-repeat;
     position: absolute;
     
@@ -117,21 +118,6 @@ h2{
     opacity: 0;
 }
 
-slider{
-    background-color: #F8F9F9;
-    overflow: hidden;
-    position: absolute;
-}
-
-slider > * {
-    position: absolute;
-    animation: slide 12s infinite;
-    overflow: hidden;
-}
-
-.slideshow-container h1{
-    text-align: center;
-}
 
 .content #blogGalery{
     position: absolute;
@@ -139,6 +125,111 @@ slider > * {
     
     z-index: 11;
 }
+
+slider{
+	display: block;
+	width:  584px;
+	height: 343px;
+	background-color: #1f1f1f;
+	overflow: hidden;
+	position: absolute;
+}
+
+slider > * {
+	position: absolute;
+	display: block;
+	width:  584px;
+	height: 343px;
+	background: #1f1f1f;
+	animation: slide 12s infinite;
+	overvlow: hidden;
+}
+
+
+slide:nth-child(1){
+	left: 0%;
+	animation-delay: -1s;
+	background: url("../imgs/slide1.jpg") no-repeat;
+	background-size: 584px, 343px;
+	background-position: center;
+}
+
+slide:nth-child(2){
+	animation-delay: 2s;
+	background: url("../imgs/slide2.jpg") no-repeat;
+	background-size: 584px, 343px;
+	background-position: center;
+}
+
+slide:nth-child(3){
+	animation-delay: 5s;
+	background: url("../imgs/slide3.jpg") no-repeat;
+	background-size: 584px, 343px;
+	background-position: center;
+}
+
+slide:nth-child(4){
+	left: 0%;
+	animation-delay: 8s;
+	background: url("../imgs/slide4.jpg") no-repeat;
+	background-size: 584px, 343px;
+	background-position: center;
+}
+
+
+#clickText{
+	color: rgba(0,0,0,0.00);
+}
+
+#blogText{
+	color: rgba(0,0,0,0.00);
+}
+
+.sliderText{
+	position: absolute;
+	background-color: rgba(0,0,0,0.00);
+	width: 584px;
+	height: 343px;
+	
+	z-index: 11;
+}
+
+.sliderText:hover #clickText{
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	color: #fff;
+	font-size: 40px;
+}
+
+.sliderText:hover #blogText{
+	position: absolute;
+	top: 43%;
+	left: 25%;
+	color: #fff;
+	font-size: 35px;
+}
+
+
+.sliderText:hover {
+	position: absolute;
+	background-color: rgba(33,33,33,0.85);
+	width: 584px;
+	height: 343px;
+
+	z-index: 11;
+}
+
+@keyframes slide {
+	0% { left: 100%; width:100%;}
+	5% { left: 0%;}
+	25% { left: 0%;}
+	30% { left: -100%; width: 100%;}
+	30.0001% { left: -100%; width: 0%;}
+	100% { left: 100%; width: 0%;}
+	
+}
+
 
 .content #contentintro{
     position: absolute;
@@ -167,6 +258,20 @@ slider > * {
     text-decoration: none;
 }
 
+#containerp{
+    position: relative;
+	top: 0px;
+	
+    background-color: #F8F9F9;
+	z-index: 13;
+}
+
+#footer{
+	position: relative;
+	background-color: #567853;
+}
+
+
 
 /*transform: translateX(-50%);
 background: linear-gradient(transparent, #000);
@@ -192,3 +297,5 @@ const number = window.scrollY + document.querySelector('#video').getBoundingClie
 <img src="/imgs/Back1.png" id="background" alt="">
 
 <img src="/imgs/image-placeholder-1200x800.png" id="blogGalery" alt="">
+
+<img src="imgs/image-placeholder-1200x800.png" id="blogGalery" alt=""> 
