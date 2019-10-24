@@ -1,0 +1,18 @@
+@font-face{ 
+	font-family: 'Santana';
+	src: url('/fonts/web_fonts/Santana.eot');
+	src: url('/fonts/web_fonts/Santana.eot?iefix') format('eot'),
+	     url('/fonts/web_fonts/Santana.woff') format('woff'),
+	     url('/fonts/web_fonts/Santana.ttf') format('truetype'),
+	     url('/fonts/web_fonts/Santana.svg#webfont') format('svg');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+#posts{
+position: center;
+}
