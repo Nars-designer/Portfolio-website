@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Nathalie Rosenbrand</title>
+		<link href="pages/project_main.html">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="ScatteredPolaroidsGallery/css/component.css" />
 		<script src="ScatteredPolaroidsGallery/js/modernizr.min.js"></script>
@@ -12,7 +13,7 @@
         <section class="zoom">
             <img src="imgs/text.png" id="text" alt="">
             <img src="imgs/S-layer2.png" id="layer2" alt="">
-            <img src="imgs/S-layer1.png" id="layer1" alt="">
+            <img src="imgs/S-layer1b-min.png" id="layer1" alt="">
         </section>
         <section id="videoContainer">
             <object data="imgs/ezgif.com-crop.gif" id="video"></object>
@@ -24,8 +25,10 @@
             <div id="blogGalery">
 				
 				<div class="sliderText">
+					<a href="pages/project_main.html">
 						<h1 id="clickText"> Click here! </h1>
-						<h2 id="blogText">to visit my blogpage</h2>
+						<h2 id="projectText">to see my projects</h2>
+					</a>
 				</div>
 					<slider>
 						<slide> </slide>
@@ -48,7 +51,7 @@
 				<section id="photostack-3" class="photostack">
 					<div>
 						<figure>
-							<a href="imgs/project fly.png" class="photostack-img"><img src="imgs/project fly.png" alt="img05"/></a>
+							<a href="0" class="photostack-img"><img src="0" alt="img05"/></a>
 							<figcaption>
 								<h2 class="photostack-title">Project Fly</h2>
 								<div class="photostack-back">
@@ -57,7 +60,7 @@
 							</figcaption>
 						</figure>
 						<figure>
-							<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="img/waterHeroes.jpg" alt="img02"/></a>
+							<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="0" alt="img02"/></a>
 							<figcaption>
 								<h2 class="photostack-title">Happy Days</h2>
 								<div class="photostack-back">
@@ -166,11 +169,16 @@
 			</section><!-- /container -->
 		</div>
         
-		<footer id="footer"> 
-		<a id="instructables"> </a>
-		<a id="linkedin"> </a>
-		<a id="cvlink"> </a>
-		</footer>
+		<section class="footer"> 
+		<p> Nathalie Rosenbrand 2019 </p>
+		<div id="buttonsFooter">
+		<a id="instructables" href="/pages/blog_page.html"> <img src="imgs/B-Instructables.png" id="insb" alt=""> </a>
+		<a id="linkedin" href="https://www.linkedin.com/in/nathalie-rosenbrand/" target="_blank"> 
+			<img src="imgs/B-linkedIn.png" id="linb" alt=""> 
+		</a>
+		<a id="cvlink" href="/pages/blog_page.html"> <img src="imgs/B-cv.png" id="cvb" alt=""> </a>
+		</div>
+		</section>
 		
         <script type="text/javascript">
             
@@ -179,8 +187,9 @@
         scroll = window.pageYOffset;
         document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;
         scroll = offset;
-        layer1.style.width = (100 + scroll/5) + '%';
-                });
+        layer1.style.width = (100 + scroll/4) + '%';
+		layer1.style.right = - scroll/20  + '%'; 
+				});
         var layer2 = document.getElementById('layer2')
         scroll = window.pageYOffset;
         document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;
@@ -206,7 +215,7 @@
             console.log(scrollable);
             console.log(scrolled);
             
-            if((scrolled >= 600) && (scrolled <= 1360)) {
+            if((scrolled >= 400) && (scrolled <= 1360)) {
                 console.log("show video");
                 video.style.opacity = 1.0; 
                 vidClass.style.zIndex = 1000;
