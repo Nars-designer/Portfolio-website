@@ -7,12 +7,72 @@
 	     url('/fonts/web_fonts/Santana.svg#webfont') format('svg');
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+a{
+	text-decoration: none;
+	font-family: 'Santana';
+	color: black;
 }
 
-#posts{
-position: center;
+p{
+	color: black;
+    font-family: Calibri;
+    font-size: 16px;
+	z-index: 10;
+}
+
+#title h1{
+	color: #FFF;
+    font-family: Santana;
+	text-align: center;
+	background-color: rgba(108, 115, 108, 0.9);
+	width: 94vw;
+	margin-top: 50px;
+	margin: 0 auto;
+	padding: 2%;
+	margin-bottom: 1%;
+}
+
+#title a{
+	position: absolute;
+	left: 2%;
+	top: 5%;
+	text-decoration: none;
+	background-color: rgba(100, 100, 100, 0.9);
+	color: #FFFFFF;
+	font-family: 'Santana';
+	padding: 1%;
+	transition: transform .2s;
+}
+
+#title a:hover{
+	transform: scale(1.1);
+}
+
+.post{
+	display: grid;
+	max-width: 1000px;
+	margin: 200px auto;
+	grid-gap: 10px;
+	grid-template-columns: 15% 60% 15%;
+}
+
+h2, p, a{
+	grid-column: 2 / -2;
+}
+
+h2{
+	color: #FFF;
+    font-family: Santana;
+	font-size: 40px;
+	background-color: rgba(108, 115, 108, 0.9);
+	padding: 2%;
+	grid-column: 1 / -1;
+	width: 96%;
+}
+
+img{
+	margin: 0;
+	grid-column: 1 / -1;
+	width: 100%;
+
 }
