@@ -1,0 +1,36 @@
+@font-face{ 
+	font-family: 'Santana';
+	src: url('/fonts/web_fonts/Santana.eot');
+	src: url('/fonts/web_fonts/Santana.eot?iefix') format('eot'),
+	     url('/fonts/web_fonts/Santana.woff') format('woff'),
+	     url('/fonts/web_fonts/Santana.ttf') format('truetype'),
+	     url('/fonts/web_fonts/Santana.svg#webfont') format('svg');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+	text-align: center;
+}
+
+#main-img{
+	background-color: rgba(108, 115, 108, 0.9);
+	width: 20%;
+	margin-top: 50px;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-family: 'Santana';
+	padding: 5%;
+}
+
+a{
+	text-decoration: none;
+	background-color: rgba(100, 100, 100, 0.9);
+	color: #FFFFFF;
+	font-family: 'Santana';
+	padding: 2%;
+}
+
+a:hover{
+	
+}

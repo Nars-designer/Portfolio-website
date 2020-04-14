@@ -16,7 +16,8 @@
             <img src="imgs/S-layer1b-min.png" id="layer1" alt="">
         </section>
         <section id="videoContainer">
-            <object data="imgs/cinematic.gif" id="video"></object>
+			<video preload="auto" src="imgs/Att_3_ENG.mp4" autoplay loop type="video/mp4" id="video"></video>
+          
         </section>
         
         <section class="content">
@@ -40,7 +41,7 @@
 
             <div id="contentintro"> 
                 <h1> About me</h1>
-                <h2> My name is Nathalie and as a Creatve Media and Game technologies student I'm learning a variety of skill's to enhance experiences and inspire users. I'm interested in serious gaming and E-learning and currently looking for an internship! </h2>
+                <h2> My name is Nathalie and as a Creatve Media and Game technologies student I'm learning a variety of skills to enhance experiences and inspire users. I'm interested in serious gaming and E-learning and currently looking for an internship! </h2>
                 <a id="CVbutton" href="/pages/CV_page.html">Visit my CV here!</a>
             </div>
         </section>
@@ -55,21 +56,30 @@
 							<figcaption>
 								<h2 class="photostack-title">Open day!</h2>
 								<div class="photostack-back">
-									<p>11-10-2019 Tonight I helped at the open day of my university. I was actually invited there by one of the teachers to showcase a project from the first year <a href="pages/blog_page.html"> Click here to continue reading...</a></p>
+									<p>11-10-2019 Tonight I helped at the open day of my university. I was actually invited there by one of the teachers to showcase a project from the first year</p>
 								</div>
 							</figcaption>
 						</figure>
 						<figure>
-							<a href="http://goo.gl/fhwlSP" class="photostack-img"><img src="imgs/Thumbnails/2P.jpg" alt="ScatteredP"/></a>
+							<a href="pages/blog_page.html" class="photostack-img"><img src="imgs/Thumbnails/2P.jpg" alt="ScatteredP"/></a>
 							<figcaption>
 								<h2 class="photostack-title">Propaedeutic</h2>
 								<div class="photostack-back">
-									<p>29-10-2019 Tonight was amazing. I received my (second) propaedeutic! It was in the evening and I was allowed to take 3 people with me so I asked my parents and sister to come.<a href="pages/blog_page.html"> Click here to continue reading...</a></p>
+									<p>29-10-2019 Tonight was amazing. I received my (second) propaedeutic! It was in the evening and I was allowed to take 3 people with me so I asked my parents and sister to come.</p>
 								</div>
 							</figcaption>
 						</figure>
 						<figure>
-							<a href="http://goo.gl/Jmvr4u" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img03"/></a>
+							<a href="pages/blog_page.html" class="photostack-img"><img src="imgs/Thumbnails/TeamCRG.jpeg" alt="img03"/></a>
+							<figcaption>
+								<h2 class="photostack-title">Team project December</h2>
+								<div class="photostack-back">
+									<p>I´m currently working at a team project. We´re making a game that explains the different CMGT roles to the visitors of the open day. The team is amazing and I´m hoping for a good grade!</p>
+								</div>
+							</figcaption>
+						</figure>
+						<figure>
+							<a href="pages/blog_page.html" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img01"/></a>
 							<figcaption>
 								<h2 class="photostack-title">404</h2>
 								<div class="photostack-back">
@@ -78,7 +88,7 @@
 							</figcaption>
 						</figure>
 						<figure>
-							<a href="http://goo.gl/Qw3ND4" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img01"/></a>
+							<a href="pages/blog_page.html" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img04"/></a>
 							<figcaption>
 								<h2 class="photostack-title">404</h2>
 								<div class="photostack-back">
@@ -87,16 +97,7 @@
 							</figcaption>
 						</figure>
 						<figure>
-							<a href="http://goo.gl/49lN3k" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img04"/></a>
-							<figcaption>
-								<h2 class="photostack-title">404</h2>
-								<div class="photostack-back">
-									<p>Sorry! I don't have enough blogposts to fill this cards yet <a href="pages/blog_page.html"> Click here to visit my current posts...</a></p>
-								</div>
-							</figcaption>
-						</figure>
-						<figure>
-							<a href="http://goo.gl/Ms7VDl" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img06"/></a>
+							<a href="pages/blog_page.html" class="photostack-img"><img src="imgs/Thumbnails/NF404.png" alt="img06"/></a>
 							<figcaption>
 								<h2 class="photostack-title">404</h2>
 								<div class="photostack-back">
@@ -210,8 +211,24 @@
 		</div>
 		</section>
 		
+		<div class="loadingWrapper"> 
+			<div class="loaderL">
+				<div class="loader"></div>
+			</div>
+		</div>
+		
+		
         <script type="text/javascript">
-            
+			
+        //disable scrolling while loading
+		//var noScroll = document.getElementsByTagName("body")[0].style.overflowY = "auto";
+		window.addEventListener("load", function(){
+			const loadingWr = document.querySelector(".loadingWrapper");
+			loadingWr.style.zIndex = 0;
+			loadingWr.style.opacity = 0;
+			document.getElementsByTagName("body")[0].style.overflowY = "auto";
+		});	
+			
         //Following lines enable the parallax zoom at the top
         var layer1 = document.getElementById('layer1')
         scroll = window.pageYOffset;
@@ -248,7 +265,7 @@
             if((scrolled >= 400) && (scrolled <= 1360)) {
                 console.log("show video");
                 video.style.opacity = 1.0; 
-                vidClass.style.zIndex = 1000;
+                vidClass.style.zIndex = 2000;
             }
             else{
                 console.log("hide video");
@@ -280,12 +297,6 @@
                 portrait.style.opacity = 0.0;
             }
          });
-        var gallery = document.getElementById('blogGalery')
-        scroll = window.pageYOffset;
-        document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;
-        scroll = offset ;
-        gallery.style.top = - -1080 + (scroll * 0.2) + 'px';
-                });
         var text = document.getElementById('contentintro')
         scroll = window.pageYOffset;
         document.addEventListener('scroll', function (e) { var offset = window.pageYOffset;

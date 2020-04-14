@@ -197,8 +197,9 @@ h2{
 .five{
 	grid-column: 5/7;
 	grid-row: 3/5;
-	/*background-image: url("../imgs/image-placeholder-1200x800 - kopie.png");*/
-	background-color: #727272;
+	background-image: url("../imgs/PlaningINL.jpg")
+}
+	
 
 /*
 
