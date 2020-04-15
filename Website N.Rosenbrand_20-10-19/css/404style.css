@@ -1,11 +1,10 @@
-@font-face{ 
-	font-family: 'Santana';
-	src: url('/fonts/web_fonts/Santana.eot');
-	src: url('/fonts/web_fonts/Santana.eot?iefix') format('eot'),
-	     url('/fonts/web_fonts/Santana.woff') format('woff'),
-	     url('/fonts/web_fonts/Santana.ttf') format('truetype'),
-	     url('/fonts/web_fonts/Santana.svg#webfont') format('svg');
+@font-face {
+    font-family: 'Santana';
+    src: url('../fonts/Santana/Santana.ttf');
+    font-weight: 100;
+    font-style: normal;
 }
+
 
 body{
     margin: 0;

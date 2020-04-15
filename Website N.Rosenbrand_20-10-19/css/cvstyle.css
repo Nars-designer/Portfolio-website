@@ -1,11 +1,10 @@
-@font-face{ 
-	font-family: 'Santana';
-	src: url('/fonts/web_fonts/Santana.eot');
-	src: url('/fonts/web_fonts/Santana.eot?iefix') format('eot'),
-	     url('/fonts/web_fonts/Santana.woff') format('woff'),
-	     url('/fonts/web_fonts/Santana.ttf') format('truetype'),
-	     url('/fonts/web_fonts/Santana.svg#webfont') format('svg');
+@font-face {
+    font-family: 'Santana';
+    src: url('../fonts/Santana/Santana.ttf');
+    font-weight: 100;
+    font-style: normal;
 }
+
 
 a{
 	text-decoration: none;
@@ -15,26 +14,26 @@ a{
 
 p{
 	color: black;
-    font-family: Calibri;
+    font-family: 'Calibri';
     font-size: 18px;
 	z-index: 10;
 }
 
 h1{
 	color: black;
-    font-family: Santana;
+    font-family:'Santana';
 	font-size: 40px;
 }
 
 h2{
 	color: black;
-    font-family: Santana;
+    font-family: 'Santana';
 	font-size: 40px;
 }
 
 #title h1{
 	color: #FFF;
-    font-family: Santana;
+    font-family: 'Santana';
 	text-align: center;
 	background-color: rgba(108, 115, 108, 0.8);
 	width: 94vw;
@@ -155,7 +154,7 @@ h2{
 }
 
 .footer p{
-	font-family: Santana;
+	font-family:'Santana';
 	color: #fff;
 	text-align: left;
 	padding-left: 1%;
