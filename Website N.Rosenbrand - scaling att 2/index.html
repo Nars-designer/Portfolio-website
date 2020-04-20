@@ -272,9 +272,20 @@
             
             //console.log(scrollable);
             //console.log(scrolled);
-            
-            if((scrolled >= 400) && (scrolled <= 1360)) {
-                console.log("show video");
+			function myFunction(large) {
+			  if (large.matches) { // If media query matches
+				dMove = true;
+			  } else {
+				dMove = false;
+			  }
+			}
+
+			var large = window.matchMedia("(min-width: 1920px)")
+			myFunction(large) // Call listener function at run time
+			large.addListener(myFunction) // Attach listener function on state changes
+			
+            if((dMove == true) && (scrolled >= 400) && (scrolled <= 1700) || (scrolled >= 400) && (scrolled <= 1360)){
+				console.log("show video");
                 video.style.opacity = 1.0; 
                 vidClass.style.zIndex = 2000;
             }
@@ -284,6 +295,7 @@
                 vidClass.style.zIndex = 1;
             } 
                 }); 
+			
             
         //Following lines enable the parallax scrolling in the content parts images
         var portrait = document.getElementById('portrait');
