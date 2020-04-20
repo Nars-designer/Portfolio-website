@@ -272,6 +272,8 @@
             
             //console.log(scrollable);
             //console.log(scrolled);
+			
+			//Function checking for min-width of 1920px
 			function myFunction(large) {
 			  if (large.matches) { // If media query matches
 				dMove = true;
@@ -279,11 +281,11 @@
 				dMove = false;
 			  }
 			}
-
 			var large = window.matchMedia("(min-width: 1920px)")
 			myFunction(large) // Call listener function at run time
 			large.addListener(myFunction) // Attach listener function on state changes
 			
+			//Actually enabeling video
             if((dMove == true) && (scrolled >= 400) && (scrolled <= 1700) || (scrolled >= 400) && (scrolled <= 1360)){
 				console.log("show video");
                 video.style.opacity = 1.0; 
