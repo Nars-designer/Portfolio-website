@@ -76,7 +76,10 @@ h2{
 	transform: scale(1.1);
 }
 
-
+@media only screen and (min-width: 1920px) {
+	#title a{
+	top: 4%;
+	}}
 
 .content{
 	display: grid;
@@ -153,6 +156,11 @@ h2{
 	grid-auto-rows: minmax(1%, auto);
 }
 
+@media only screen and (min-width: 1920px) {
+	.footer{
+	height: 180%;
+}}
+
 .footer p{
 	font-family:'Santana';
 	color: #fff;
@@ -161,8 +169,6 @@ h2{
 	font-size: 16px;
 	grid-column: 1;
 	grid-row: 1;
-   
-
 }
 
 .footer #buttonsFooter{
