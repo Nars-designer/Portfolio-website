@@ -1,26 +1,4 @@
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}only screen and (min-width: 1920px) {@font-face {
+@font-face {
     font-family: 'Santana';
     src: url('../fonts/Santana/Santana.ttf');
     font-weight: 100;
@@ -96,6 +74,11 @@ h2{
 	transform: scale(1.1);
 }
 
+@media only screen and (min-width: 1920px) {
+	#title a{
+	top: 4%;
+	}}
+
 #LExcel{
 	font-family: Calibri;
     font-size: 18px;
@@ -122,7 +105,7 @@ h2{
 	margin: 2% auto;
 	grid-gap: 4%;
 	grid-template-columns: 40% 50%;
-	grid-auto-rows: 6 minmax(150px, auto);
+	grid-auto-rows: minmax(150px, auto);
 }
 
 .content #text1{
@@ -153,21 +136,6 @@ h2{
 	width: 100%;
 }
 
-.content #text5{
-	margin: 0;
-	grid-row: 5;
-	grid-column: 2;
-	width: 100%;
-}
-
-.content #text6{
-	margin: 0;
-	grid-row: 6;
-	grid-column: 2;
-	width: 100%;
-}
-
-
 .content #sideimg1{
 	margin-bottom: 1%;
 	grid-column: 1;
@@ -186,30 +154,16 @@ h2{
 	margin-bottom: 1%;
 	grid-column: 1;
 	grid-row: 4;
-	
-}
-
-.content #sideimg4{
-	margin-bottom: 1%;
-	grid-column: 1;
-	grid-row: 5;
-	
-}
-
-.content #sideimg5{
-	margin-bottom: 1%;
-	grid-column: 1;
-	grid-row: 6;
-	
 }
 
 .footer{
 	grid-column: 1/2;
+	grid-row: 5;
 	width: 99vw;
 	height: 10%;
 	margin: -7%;
 	margin-top: 90%;
-	grid-row: 7;
+	
 	
 	display: grid;
 	background-color: rgba(108, 115, 108, 0.9);

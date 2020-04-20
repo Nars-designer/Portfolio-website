@@ -1,26 +1,4 @@
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}
-@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}@media only screen and (min-width: 1920px) {
-	#title a{
-	top: 4%;
-	}}only screen and (min-width: 1920px) {@font-face {
+@font-face {
     font-family: 'Santana';
     src: url('../fonts/Santana/Santana.ttf');
     font-weight: 100;
@@ -96,6 +74,11 @@ h2{
 	transform: scale(1.1);
 }
 
+@media only screen and (min-width: 1920px) {
+	#title a{
+	top: 4%;
+	}}
+
 #LExcel{
 	font-family: Calibri;
     font-size: 18px;
@@ -122,7 +105,7 @@ h2{
 	margin: 2% auto;
 	grid-gap: 4%;
 	grid-template-columns: 40% 50%;
-	grid-auto-rows: 6 minmax(150px, auto);
+	grid-auto-rows: minmax(150px, auto);
 }
 
 .content #text1{
@@ -165,6 +148,55 @@ h2{
 	grid-row: 6;
 	grid-column: 2;
 	width: 100%;
+}
+
+.content #teambanner7{
+	margin: 0;
+	margin-top: -60px;
+	margin-bottom: 2%;
+	grid-row: 7;
+	grid-column: 1/2;
+	width: 100%;
+}
+
+#teambanner7 h2{
+	color: white;
+	background-color: rgba(100, 100, 100, 0.9);
+	width: 20%;
+	padding: 1%;
+	transition: transform .2s;
+}
+
+#teambanner7 h2:hover{
+	transform: scale(1.08);
+}
+
+#teambanner7 a{
+	position:relative;
+	text-decoration: none;
+	
+	color: white;
+	font-family: 'Santana';
+	font-size: 20px;
+	padding: 1%;
+	border: 2%;
+	margin-bottom: 20%;
+	
+}
+
+#teambanner7 h1{
+	color: white;
+}
+#teambanner7 p{
+	color: white;
+}
+
+.content #backcl7{
+	padding-left: 20px;
+	padding-bottom: 20px;
+	background-color: rgba(108, 115, 108, 0.9);
+	grid-column: 1/2;
+	width: 94vw;
 }
 
 
