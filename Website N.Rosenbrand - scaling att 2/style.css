@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Santana';
+    src: url('../fonts/Santana/Santana.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+h1{
+	font-family: 'Santana', 'Calibri';
+	margin: 10%;
+}
+
+h2{
+	font-family: 'Calibri';
+	margin: 10%;
+}
+
+.Dutch{
+	width: 50vw;
+	max-width: 100%;
+	background-color: rgba(108, 115, 108, 0.9);
+	text-align: center;
+}
+.Dutch:hover{
+   background-color: rgb(89, 89, 89);
+}
+
+.English{
+	width: 50vw;
+	max-width: 100%;
+	background-color: rgba(108, 115, 108, 0.9);
+	text-align: center;
+}
+.English:hover{
+   background-color: rgb(89, 89, 89);
+}
+
+#Dbutton, #Ebutton{
+	position: relative;
+	bottom: 10%;
+	padding: 10px;
+	
+	
+    text-decoration: none;
+    font-family: 'Santana';
+    font-weight: bold;
+	color: #FFF;
+    
+    background-color: rgba(108, 115, 108, 0.9);
+	transition: transform .2s;
+}
+
+#Ebutton:hover{ 
+	padding: 20px;
+	right: 5px;
+	font-size: 18px;
+}
+
+
+#Dbutton:hover{ 
+	padding: 20px;
+	right: 5px;
+	font-size: 18px;
+}
+
+
+@media only screen and (max-width: 500px) {
+	.Dutch{
+	min-width: 500px;
+	width: 100%;
+	background-color: rgba(108, 115, 108, 0.9);
+	background-size: cover;
+}
+
+.English{
+	min-width: 500px;
+	width: 100%;
+	background-color: rgba(108, 115, 108, 0.9);
+	background-size: cover;
+}
+}
